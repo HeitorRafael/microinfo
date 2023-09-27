@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variáveis Cul Parte 1</title>
+</head>
+<body>
+    <!-- Variáveis
+         Referências Bibliográficas:
+        1. W3school https://www.w3schools.com/js/js_variables.asp
+        
+        Referências Vídeo:
+        1. Curso JavaScript completo: Aula 06 - Var Let Const 
+        https://www.youtube.com/watch?v=SpLTLZmrcjo
+    -->
+    <script>
+        /* Basicamente podemos trabalhar com três tipos de declaração de variáveis */
+
+        let var_01 ="Agda";
+        var var_02 = "Lena";
+        const var_03 = "Mari";
+        /* Pergunta: se apenas declararmos uma variável, sem fazermos
+         a atribuição. Qual o conteúdo no espaço de memória 
+         desta variável.
+         
+         Resposta: "undefined" = Indefinido
+         */ 
+
+         // Notar a concatenação com "Tag" HTML
+         document.write(var_01 + '<br>');
+         document.write(var_02 + '<br>');
+         document.write(var_03 + '<br>');
+         document.write(var_03 + " " + var_01 + " " + var_02 +  '<br>');
+         
+        /* Quando usar var, let ou const?
+           1. Sempre declare variáveis
+           2. Sempre use "const" quando a intenção e não alterar o valor
+           3. Sempre use "const" quando a intenção e não alterar o tipo de variavel
+           4. Só use "let" não puder usar "const"
+           5. Use apenas "var" para manter compatibilidade com navegadores.
+
+        */
+        // A variável declara novamente com "var" não perde o seu valor
+        // Exemplo 
+        var var_02;
+        document.write(var_02 + '<br>');   
+
+         
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,15 @@
+h1 {color:rgb(252, 8, 122);
+   border-style: solid;
+}
+
+p {color: blueviolet;}
+
+
+h2 {color: chartreuse;}
+#NP {color: darkred;}
+
+#IMG1 {
+    width: 600px;
+    height: 500px;
+
+}

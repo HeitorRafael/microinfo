@@ -1,0 +1,1 @@
+alert('0 - Um comando de ALERTA rodando de um js externo');
