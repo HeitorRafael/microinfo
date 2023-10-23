@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Condicional</title>
+</head>
+<body>
+    <!-- Referências
+        1. CBF - Cursos
+        https://www.youtube.com/watch?v=lDTKpamdXzc
+        Comando condicional IF e IF ELSE em Javascript - Curso de Javascript Moderno - Aula 13
+
+        2. W3schools
+        https://www.w3schools.com/js/js_if_else.asp
+        JavaScript if, else, and else if
+    -->
+    <script>
+        /*  Operador Condicional
+            Em JavaScript temos 3 operadores condicionais:
+            a) Operador if, else e else if
+            b) Operador ternário ?
+            c) Switch
+        */
+       // Operador Ternário
+       let x = 9;
+       let mensagem1 = x % 2 === 0 ? "x é par" : "x é ímpar";
+       console.log(mensagem1);
+       /* Este operador é uma forma abreviada de escrever
+       uma declaração if. Ele tem a seguinte sintaxe:
+       condição ? valor_se_verdadeiro : valor_se_falso
+
+       Onde a condição é uma expressão que retorna um
+       valor booleano (verdadeiro ou falso)
+       */
+
+       // Mais um exemplo
+       var idade = 18;
+       var mensagem = idade >= 18 ? "Maior de idade" : "Menor de idade";
+       console.log(mensagem);
+
+       /* Operador if
+          É usado para executar um bloco de código se a
+          avaliação da condição for verdadeira.
+
+          if (condição) {
+            // Bloco do código executado se a condição
+               for verdadeira.
+          }
+       */
+       // Exemplo com if
+       let xa = 10;
+       let ya = 5;
+       if (xa > ya) {
+            console.log("xa é maior do que ya");
+       }
+
+       // Exemplo com if...else
+       var idade2 = 18;
+       if (idade2 >= 18) {
+            console.log("Maior de 18 anos");
+       } else {
+            console.log("Menor de 18 anos");
+       }
+
+       // Exemplo com if...else if...else
+       var numero = 10;
+       if (numero > 10) {
+            console.log("Númeo maior do que 10");
+       } else if (numero < 10) {
+            console.log("Número menor do que 10");
+       } else {
+            console.log("Número igual a 10");
+       }
+
+       /* Operador Switch
+          é uma forma mais eficiente de escrever múltiplas declarações
+          if...else encadeados
+
+          switch (valor) {
+            case valor1:
+                //código se valor for igual a valor1
+                break;
+            
+            case valor2:
+                //código se valor for igual a valor2
+                break;
+            default:
+                // Código se todas as opções anteriores
+                não tiverem sido satisfeitas.
+                break;
+          }
+       */
+
+       // Exemplo switch
+       var cor = "vermelho";
+       switch (cor) {
+        case "vermelho":
+            console.log("Cor vermelha");
+            break;
+        case "azul":
+            console.log("Cor azul");
+            break;
+        default:
+            console.log("Não é vermelho nem azul");
+            break;
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+console.log("a) Linkando um arquivo de 'script' no <head>");
