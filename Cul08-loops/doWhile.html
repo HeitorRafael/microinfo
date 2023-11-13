@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    var js_qth;
+    var js_resposta = true;
+
+    do{
+        js_qth = parseFloat (prompt ('informe a quantidade de horas trabalhadas'))
+        if (js_qth > 180) {
+            document.write('Boa mlk vc trabalha e o dinheiro vem para mim!')
+        }
+        if (js_qth < 130) {
+            document.write('Vai trabalhar vagabundo!')
+        }
+        else{
+            document.write('Fez o minimo em!')
+        }
+
+        js_resposta = window.confirm('deseja continuar?')
+    } while (js_resposta == true)
+</script>
+
+</body>
+</html>
